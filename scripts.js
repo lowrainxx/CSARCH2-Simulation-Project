@@ -249,14 +249,14 @@ $(document).ready(function () {
             
             if (check_num(cacheArr[block], testCase2Arr[j])) {
                 status = appendHitMiss("#memory", 1);
-                printToCache();
                 cacheHitCount++;
+                printToCache();
             } else {
                 status = appendHitMiss("#memory", 0);
                 cacheMissCount++;
                 cacheArr[block][index_counter] = testCase2Arr[j];
-                printToCache();
                 index[block]++;
+                printToCache();
                 if (index[block] >= num_blockperset) {
                     index[block] = 0;
                 }
@@ -321,13 +321,13 @@ $(document).ready(function () {
 
                 if (check_num(cacheArr[block], testCase3Arr[i])) {
                     status = appendHitMiss("#memory", 1);
-                    printToCache();
                     cacheHitCount++;
+                    printToCache();
                 } else {
                     status = appendHitMiss("#memory", 0);
+                    printToCache();
                     cacheMissCount++;
                     cacheArr[block][index_counter] = testCase3Arr[i];
-                    printToCache();
                     index[block]++;
                     if (index[block] >= num_blockperset) {
                         index[block] = 0;
@@ -385,13 +385,13 @@ $(document).ready(function () {
 
             if (check_num(cacheArr[block], customArr[j])) {
                 status = appendHitMiss("#customSeq", 1);
-                printToCache();
                 cacheHitCount++;
+                printToCache();
             } else {
                 status = appendHitMiss("#customSeq", 0);
+                printToCache();
                 cacheMissCount++;
                 cacheArr[block][index_counter] = customArr[j];
-                printToCache();
                 index[block]++;
                 if (index[block] >= num_blockperset) {
                     index[block] = 0;
