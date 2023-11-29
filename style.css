@@ -1,0 +1,35 @@
+.border-control {
+    border: 0;
+    box-shadow: none;
+    background-color: transparent;
+    border-width: 0;
+}
+
+body {
+    background-color: rgb(255, 252, 244);
+}
+
+button {
+    padding: 10px;
+    background-color: rgb(196, 117, 192);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 300px;
+}
+
+.no-spinners {
+    -moz-appearance: textfield;
+ }
+ 
+ .no-spinners::-webkit-outer-spin-button,
+ .no-spinners::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+ }
+
+/* 
+# = id
+. = class
+none = <>
+ */
