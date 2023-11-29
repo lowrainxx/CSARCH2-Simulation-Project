@@ -364,7 +364,7 @@ $(document).ready(function () {
         $("#customSeqBlock").show();
         $("#nextStepBtn").prop("disabled", false);        
         $("#finishBtn").prop("disabled", false);
-        document.getElementById("customSequenceCase").style.background = "green";
+        document.getElementById("customSequenceCase").style.background = "rgb(94, 194, 94)";
         document.getElementById("customRunBtn").innerHTML = "RUNNING SEQUENCE...";
         $("#customRunBtn").prop("disabled", true);
         let status = 0;
