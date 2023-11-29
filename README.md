@@ -30,6 +30,8 @@ This test requires 2n cache blocks which contain the sequence 0, 1, 2, 3, …, 2
 ![tc1Snapshot](https://github.com/lowrainxx/CSARCH2-Simulation-Project/assets/87628691/4971555a-f62d-468e-aa07-2b183d459efb)
 
 #### Block Placement Tracing
+The images below show the sequencing of blocks number 0-62. It is repeated 4 times as stated in the test case that is why 0-62 blocks are shown 4 times.
+
 |                                     |                                     | 
 | ----------------------------------- | ----------------------------------- |
 | ![tc1bt1](https://github.com/lowrainxx/CSARCH2-Simulation-Project/assets/87628691/53f9dcbe-cd63-4533-8b0e-8604f58cc452) | ![tc1bt2](https://github.com/lowrainxx/CSARCH2-Simulation-Project/assets/87628691/040e1009-51cc-4ddd-b41f-20fa0fe12bd2) | 
@@ -144,3 +146,6 @@ Average Memory Access Time = 0.3191 * 1ns + 0.6809 * 22 <br>
 Total Memory Access Time = 376 * 15.2979ns
 
 **Summary**: <br>
+The algorithm sequentially processes randomly generated values, assigning each to a specific block using the modulo operation with the value and the set count. When sets become full, the First-In-First-Out (FIFO) replacement strategy replaces the oldest inputted value with the new one, indicating whether it results in a hit or miss during the operation. In the given algorithm, the hits happen in the repeating part of the sequence. 
+
+<br> <br>
