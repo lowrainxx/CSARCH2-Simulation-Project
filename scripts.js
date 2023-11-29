@@ -191,6 +191,7 @@ $(document).ready(function () {
                 index_counter = index[block];
                 if (check_num(cacheArr[block], testCase1Arr[i])) {
                     status = appendHitMiss("#memory", 1)
+                    printToCache();
                     cacheHitCount++;
                 } else {
                     status = appendHitMiss("#memory", 0)
@@ -248,6 +249,7 @@ $(document).ready(function () {
             
             if (check_num(cacheArr[block], testCase2Arr[j])) {
                 status = appendHitMiss("#memory", 1);
+                printToCache();
                 cacheHitCount++;
             } else {
                 status = appendHitMiss("#memory", 0);
@@ -319,6 +321,7 @@ $(document).ready(function () {
 
                 if (check_num(cacheArr[block], testCase3Arr[i])) {
                     status = appendHitMiss("#memory", 1);
+                    printToCache();
                     cacheHitCount++;
                 } else {
                     status = appendHitMiss("#memory", 0);
@@ -382,6 +385,7 @@ $(document).ready(function () {
 
             if (check_num(cacheArr[block], customArr[j])) {
                 status = appendHitMiss("#customSeq", 1);
+                printToCache();
                 cacheHitCount++;
             } else {
                 status = appendHitMiss("#customSeq", 0);
