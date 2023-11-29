@@ -44,8 +44,6 @@ $(document).ready(function () {
 
         resetCacheBlock();
         $("#nextStepBtn").show();
-        $("#nextStepBtn").prop("disabled", true);
-        $("#finishBtn").prop("disabled", true);
         $("#finalSnapshotContainer").hide();
         document.getElementById("customSequenceCase").style.background = "rgb(196, 117, 192)";
         document.getElementById("testCase1").style.background = "rgb(196, 117, 192)";
@@ -53,6 +51,9 @@ $(document).ready(function () {
         document.getElementById("testCase3").style.background = "rgb(196, 117, 192)";
         document.getElementById("finishBtn").innerHTML = "FINISH";
         document.getElementById("customRunBtn").innerHTML = "Run Sequence";
+        
+        $("#nextStepBtn").prop("disabled", true);
+        $("#finishBtn").prop("disabled", true);
     };
 
     let waitForPressResolve;
@@ -427,19 +428,19 @@ $(document).ready(function () {
         // text content
         text="4-WAY BSA + FIFO"
     
-        if (document.getElementById("customSequenceCase").style.background =="green"){
+        if (document.getElementById("customSequenceCase").style.background =="rgb(94, 194, 94)"){
             console.log("Download custom sequence")
             fname = "4-WAY BSA FIFO Custom Sequence"
             text += ": Custom Sequence\n=====================================\n\n"
             memoryBlockLength = customArr.length
             memorySequenceBlock = customArr
-        } else if (document.getElementById("testCase1").style.background =="green"){
+        } else if (document.getElementById("testCase1").style.background =="rgb(94, 194, 94)"){
             console.log("Download test case 1")
             fname = "4-WAY BSA FIFO Test Case 1"
             text += ": Test Case 1\n=====================================\n\n"
             memoryBlockLength = 256
             memorySequenceBlock = testCase1Arr
-        } else if (document.getElementById("testCase2").style.background =="green"){
+        } else if (document.getElementById("testCase2").style.background =="rgb(94, 194, 94)"){
             console.log("Download test case 2")
             fname = "4-WAY BSA FIFO Test Case 2"
             text += ": Test Case 2\n=====================================\n\n"
