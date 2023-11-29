@@ -11,9 +11,9 @@
 How to run:
 Open the `index.html` file to run the program.
 
-# Website Link: https://lowrainxx.github.io/CSARCH2-Simulation-Project/
+## Website Link: https://lowrainxx.github.io/CSARCH2-Simulation-Project/
 
-# Video Link: https://youtu.be/sQSGaueX-Dg
+## Video Link: https://youtu.be/sQSGaueX-Dg
 
 ## Common Specifications:
 Total Number of cache blocks: 32 blocks
